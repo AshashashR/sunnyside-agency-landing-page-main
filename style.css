@@ -120,14 +120,43 @@ img {
 
 .about-title {
     font-family: 'Fraunces', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     margin-bottom: 1em;
+    color: var(--very-dark-desaturated-blue);
 }
 
 .text {
     font-family: 'Barlow', sans-serif; 
     font-weight: 600;
     font-size: 18px;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    color: var(--dark-grayish-blue);
+    line-height: 1.7;
+}
+
+.learn-more-y {
+    text-decoration: underline solid hsla(51, 100%, 49%, 0.2) 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.learn-more-y:hover {
+    text-decoration: underline solid hsla(51, 100%, 49%, 0.8) 5px;
+}
+
+.learn-more-p {
+    text-decoration: underline solid hsla(7, 99%, 70%, 0.2) 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.learn-more-p:hover {
+    text-decoration: underline solid hsla(7, 99%, 70%, 0.8) 5px;
 }
