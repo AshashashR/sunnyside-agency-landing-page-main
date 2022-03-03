@@ -2,6 +2,8 @@ https://github.com/Prajwol-Shrestha/Prajwol-Shrestha.github.io/blob/main/Front%2
 
 https://github.com/Prajwol-Shrestha/Prajwol-Shrestha.github.io/blob/main/Front%20End%20Mentor/sunnyside-agency-landing-page-main/style.css
 
+https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-Cb6Yv7gtv
+
 
 
 # Frontend Mentor - Sunnyside agency landing page
