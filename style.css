@@ -28,12 +28,16 @@ img {
     max-width: 100%;
 }
 
+/* Main section*/
+
 .main {
     background: url('./images/desktop/image-header.jpg') no-repeat center;
     background-size: cover;
     padding: 2em;
     min-height: 100vh;
 }
+
+/* Navbar*/
 
 .nav_container {
     display: flex;
@@ -87,6 +91,8 @@ img {
     display: block;
 }
 
+/* About section */
+
 .flex {
     display: flex;
     justify-content: center;
@@ -102,14 +108,9 @@ img {
     flex-direction: row-reverse;
 }
 
-.about .about-title {
+.about-title {
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 1em;
-    margin: 3em;
-}
-
-.second-content {
-    padding: 5em;
+    margin: 1.5em;
 }
