@@ -238,10 +238,34 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8em;
 }
 
 .testimonial {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
+    margin: 0 3em;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 25%
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.images-container {
+    
 }
