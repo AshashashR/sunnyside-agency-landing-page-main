@@ -247,7 +247,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    margin: 0 3em;
+    margin: 0 2em;
 }
 
 .avatar {
@@ -270,7 +270,7 @@ img {
     color: var(--very-dark-grayish-blue);
     line-height: 1.7;
     text-align:center;
-    padding: 2em 3em;
+    padding: 2em 6em;
 }
 
 .name {
@@ -291,6 +291,12 @@ img {
     padding-top: 1em;
 }
 
+/* Footer */
+
+.footer {
+    min-height: 100vh;
+}
 .images-container {
-    
+    display: grid;
+    grid-template-columns: repeat(4, auto);
 }
