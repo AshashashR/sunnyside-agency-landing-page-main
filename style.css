@@ -160,3 +160,63 @@ img {
 .learn-more-p:hover {
     text-decoration: underline solid hsla(7, 99%, 70%, 0.8) 5px;
 }
+
+/* Services section */
+
+.row-3 {
+    display: flex;
+    flex-direction: column;
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+.row-3__content, .row-4__content {
+    text-align: center;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.graphic-title {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--dark-desaturated-cyan);
+    padding-top: 80%;
+    padding-bottom: 1em;
+}
+
+.graphic-text {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 2em;
+    color: var(--dark-desaturated-cyan);
+    line-height: 1.7;
+    padding: 0 23%;
+}
+
+.row-4 {
+    display: flex;
+    flex-direction: column;
+    background: url(./images/desktop/image-photography.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+.photography-title {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--dark-blue);
+    padding-top: 80%;
+    padding-bottom: 1em;
+}
+
+.photography-text {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 2em;
+    color: var(--dark-blue);
+    line-height: 1.7;
+    padding: 0 23%;
+}
