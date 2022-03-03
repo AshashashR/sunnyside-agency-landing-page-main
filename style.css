@@ -231,14 +231,14 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: center;
-    padding-top: 5em;
+    margin-top: 5em;
 }
 
 .testimonials-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8em;
+    min-height: 100vh;
 }
 
 .testimonial {
@@ -263,8 +263,33 @@ img {
 }
 
 
+.testimonial-text {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.7;
+    text-align:center;
+    padding: 2em 3em;
+}
 
+.name {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+    padding-top: 2em;
+}
 
+.job {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--grayish-blue);
+    line-height: 1.7;
+    text-align:center;
+    padding-top: 1em;
+}
 
 .images-container {
     
