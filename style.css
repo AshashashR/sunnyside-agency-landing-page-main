@@ -292,6 +292,7 @@ img {
 
 .footer {
     background-color: #90d4c5;
+    padding-bottom: 6em;
 }
 .images-container {
     display: grid;
@@ -304,6 +305,28 @@ img {
     font-size: 40px;
     color: var(--dark-moderate-cyan);
     text-align:center;
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    padding-bottom: 3em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--dark-moderate-cyan);
+    font-family: 'Barlow', sans-serif; 
+    font-size: 18px;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
