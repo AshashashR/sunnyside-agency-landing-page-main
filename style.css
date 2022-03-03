@@ -1,7 +1,4 @@
 :root {
-    --bold: 'Fraunces', serif;
-    --notBold: font-family: 'Barlow', sans-serif;
-
     --soft-red: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
     --dark-desaturated-cyan: hsl(167, 40%, 24%);  /* (graphic design text) */
@@ -112,10 +109,9 @@ img {
 .second-content {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     float: left;
-    padding: 0 13%;
+    padding: 0 7%;
 }
 
 .about-title {
@@ -293,10 +289,21 @@ img {
 
 /* Footer */
 
+
 .footer {
-    min-height: 100vh;
+    background-color: #90d4c5;
 }
 .images-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
 }
+
+.footer-title {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--dark-moderate-cyan);
+    text-align:center;
+    padding: 2em;
+}
+
