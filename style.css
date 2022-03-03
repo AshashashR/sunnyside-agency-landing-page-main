@@ -220,3 +220,28 @@ img {
     line-height: 1.7;
     padding: 0 23%;
 }
+
+/* Testimonials section */
+
+.testimonials-title {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 5em;
+}
+
+.testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
