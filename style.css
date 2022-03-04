@@ -431,11 +431,23 @@ img {
     .flex {
         display: block;
     }
-    .row-4, .row-3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } /* just for mobile view */
-
-
+    .graphic-title {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: var(--dark-desaturated-cyan);
+        padding-top: 90%;
+    }
+    
+    .graphic-text {
+        font-family: 'Barlow', sans-serif; 
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--dark-desaturated-cyan);
+        line-height: 1.7;
+        padding: 1em 0em;
+    }
+    .testimonials {
+        display: none;
+    }
 }
