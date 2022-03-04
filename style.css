@@ -347,13 +347,41 @@ img {
 /* Mobile view */
 
 @media only screen and (max-width: 768px) {
+    .main {
+        background-image: url('./images/mobile/image-header.jpg');
+        background-size: cover;
+        padding: 2em;
+        min-height: 100vh;
+    }
 
     .links-container {
         display: none;
     }
 
     .hamburger{
-        font-size: 1.5em;
+        font-size: 3em;
         color: white;
+        cursor: pointer;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .we-are-creatives {
+        color: var(--white);
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 65px;
+        letter-spacing: .15em;
+        margin: 1em 0 1em 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .down-arrow{
+        margin: 10em auto;
+        text-align: center;
+        display: block;
     }
 }
