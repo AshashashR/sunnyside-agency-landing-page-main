@@ -347,8 +347,13 @@ img {
 /* Mobile view */
 
 @media only screen and (max-width: 768px) {
-    /* Main section */
+    *, body {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: o;
+    }
     
+    /* Main section */
     .main {
         background: url('./images/mobile/image-header.jpg') no-repeat center;
         background-size: cover;
@@ -371,6 +376,9 @@ img {
     }
 
     .we-are-creatives {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: var(--white);
         font-family: 'Fraunces', sans-serif;
         font-weight: 900;
@@ -413,4 +421,10 @@ img {
         font-weight: 600;
         font-size: 15px;
     }
+
+    .row-4, .row-3, .testimonials {
+        display: none;
+    } /* just for mobile view */
+
+
 }
