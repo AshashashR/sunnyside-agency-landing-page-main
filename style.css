@@ -1,6 +1,6 @@
 :root {
     --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
+    --yellow: #fad400;
     --dark-desaturated-cyan: hsl(167, 40%, 24%);  /* (graphic design text) */
     --dark-blue: hsl(198, 62%, 26%); /* (photography text) */
     --dark-moderate-cyan: hsl(168, 34%, 41%); /* (footer) */
@@ -20,6 +20,12 @@ font-family: 'Fraunces', serif; 700, 900 */
     padding: 0;
     margin: 0;
     /* max-width: 1440px; */
+    scrollbar-width: none; /* for firefox */
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 img {
@@ -55,11 +61,17 @@ img {
 
 .link {
     color: var(--white);
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
 }
 
-.link:hover, .link:focus {
+.link:hover, .link:focus{
     opacity: .65;
 }  
+
+.overlay {
+    display: none;
+}
 
 .contact {
     font-family: 'Fraunces', sans-serif;
@@ -73,7 +85,7 @@ img {
 
 .contact:hover,.contact:focus{
     color: var(--white);
-    background-color: transparent;
+    background-color: hsla(0, 0%, 100%, 0.3);
     border: 2px solid var(--white);
 }
 
@@ -312,6 +324,10 @@ img {
     grid-template-columns: repeat(4, auto);
 }
 
+.images-mobile-container {
+    display: none;
+}
+
 .footer-title {
     font-family: 'Barlow', sans-serif; 
     font-weight: 900;
@@ -336,6 +352,13 @@ img {
     font-family: 'Barlow', sans-serif; 
     font-size: 18px;
 }
+.footer-links a:hover, .footer-links a:focus {
+    color: var(--white);
+}  
+
+.social-link:hover {
+    filter:grayscale(1) invert(1);
+}
 
 .footer-icons {
     display: flex;
@@ -346,61 +369,115 @@ img {
 
 /* Mobile view */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 925px) {
+
     *, body {
         box-sizing: border-box;
         margin: 0 auto;
-        padding: o;
+        padding: 0;
+        scrollbar-width: none; /* for firefox */
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
     }
     
     /* Main section */
+
     .main {
         background: url('./images/mobile/image-header.jpg') no-repeat center;
         background-size: cover;
-        min-height: 80vh;
-        padding: 1.4em;
+        min-height: 100vh;
+        padding: .8em;
     }
 
     .nav_container {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .links-container {
         display: none;
     }
 
-    .hamburger{
-        font-size: 3em;
-        color: white;
-        cursor: pointer;
+    .overlay {
+        position: relative;
+        display: inline-block;
+    }
+      
+    .overlay .overlaytext {
+        width: 80vw;
+        background-color: var(--white);
+        color: #fff;
+        text-align: center;
+        padding: 3em 0;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        right: 0;
+    }
+
+    .overlaytext ul {
+        list-style: none;
+        font-family: 'Barlow', sans-serif; 
+    }
+
+    .links-small {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 3em;
+    }
+    
+    .links-small a {
+        text-decoration: none;
+        color: var(--dark-grayish-blue);
+    }
+
+    .link {
+        color: var(--dark-grayish-blue);
+    }
+
+    .contact {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        color: var(--very-dark-desaturated-blue);
+        background-color: var(--yellow);
+        border-radius: 2em;
+        text-transform: uppercase;
+        padding: 1em 2em;
     }
 
     .hide {
-        display: none;
+        visibility: hidden;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+    
+    .hamburger {
+        font-size: 3em;
+        color: white;
+        cursor: pointer;
+        margin-left: 1.7em;
     }
 
     .we-are-creatives {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
-        font-family: 'Fraunces', sans-serif;
         font-weight: 900;
         font-size: 40px;
         letter-spacing: .15em;
-        text-transform: uppercase;
-        text-align: center;
     }
     
-    .down-arrow{
+    .down-arrow {
         margin: 6em auto;
         text-align: center;
-        display: block;
     }
 
-    /*About section */
+    /* About section */
+
     .row {
         width: 100%;
     }
@@ -436,7 +513,7 @@ img {
         font-weight: 900;
         font-size: 20px;
         color: var(--dark-desaturated-cyan);
-        padding-top: 90%;
+        padding-top: 95%;
     }
     
     .graphic-text {
@@ -447,7 +524,90 @@ img {
         line-height: 1.7;
         padding: 1em 0em;
     }
+
+    .photography-title {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: var(--dark-blue);
+        padding-top: 95%;
+    }
+    
+    .photography-text {
+        font-family: 'Barlow', sans-serif; 
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--dark-blue);
+        line-height: 1.7;
+        padding: 1em 0;
+    }
+
+    /* Testimonials section */
+
     .testimonials {
+        display: block;
+        margin: 3em 0;
+    }
+
+    .testimonial {
+        padding: 2.5em 0;
+    }
+    
+    .testimonials-title {
+        font-size: 18px;
+        margin-top: 4em;
+    }
+
+    .testimonials-container {
+        display: inline-block;
+        padding: 2em 0;
+    } 
+    
+    .testimonial-text {
+        padding: 2em 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .name {
+        padding-top: 0;
+    }
+
+     /* Images section */
+
+    .images-container {
         display: none;
+    }
+
+    .images-mobile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .images-mobile-container img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Footer section */
+
+    .footer-title {
+        font-weight: 700;
+        font-size: 30px;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .footer-links {
+        gap: 0;
+        padding-bottom: 4em;
+        margin: 0 .5em;
+    }
+
+    .footer-icons {
+        gap: 0;
+        margin: 0 4em;
     }
 }

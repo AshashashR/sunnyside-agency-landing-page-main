@@ -13,18 +13,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>Ashley Rakotoson | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -55,10 +43,10 @@
           <div>
             <div class="overlaytext hide" id="toggle">
               <ul class="links-small">
-                <li> <a href="#about" class="link">About</a></li>
-                <li> <a href="#services" class="link">Services</a></li>
-                <li> <a href="#projects" class="link">Projects</a></li>
-                <li> <a href="#contact" class="link contact">Contact</a></li>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">Projects</a></li>
+                <li><a href="#" class="link contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -69,7 +57,7 @@
       <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="down-arrow">
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div>
         <div class="row-1 flex">
           <img src="./images/desktop/image-transform.jpg" alt="Egg" class="egg row second">
@@ -96,7 +84,7 @@
           </div>
         </div>
 
-        <div class="flex">
+        <div class="flex" id="services">
           <div class="row-3 row">
             <div class="row-3__content">
               <h2 class="graphic-title">
@@ -172,6 +160,7 @@
 
     </section>
 
+    <!-- for desktop version -->
     <section class="images">
       <div class="images-container">
         <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
@@ -181,14 +170,24 @@
       </div>
     </section>
 
+    <!-- for mobile -->
+    <section class="images-mobile">
+      <div class="images-mobile-container" id="images-mobile">
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="Orange">
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="Cone">
+        <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar Cubes">
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <h2 class="footer-title">sunnyside</h2>
 
     <div class="footer-links">
-      <a href="#" class="footer-link">About</a>
-      <a href="#" class="footer-link">Services</a>
+      <a href="#about" class="footer-link">About</a>
+      <a href="#services" class="footer-link">Services</a>
       <a href="#" class="footer-link">Projects</a>
     </div>
 
